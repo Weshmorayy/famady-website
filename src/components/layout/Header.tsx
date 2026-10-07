@@ -33,7 +33,7 @@ export const Header = ({ setDrawerOpen }: HeaderProps) => {
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/">
-          <Image src="/images/brand/logo-gold.png" alt="Famady" width={120} height={48} priority />
+          <Image src="/images/brand/logo-gold.png" alt="Famady" width={80} height={32} className="w-[80px] md:w-[100px] h-auto" priority />
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
