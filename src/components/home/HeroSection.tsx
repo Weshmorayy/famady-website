@@ -38,28 +38,28 @@ export default function HeroSection() {
         {/* Texte — bas gauche, jamais centré */}
         <div className="relative z-10 container-site pb-20 lg:pb-28">
           <p
-            className="font-body text-xs uppercase tracking-[0.35em] mb-4 opacity-0 animate-fade-up delay-100"
+            className="font-body text-xs uppercase tracking-[0.35em] mb-4 animate-fade-up delay-100"
             style={{ color: 'var(--color-or-reflet)' }}
           >
             Nouvelle Collection
           </p>
 
           <h1
-            className="font-heading text-6xl sm:text-7xl lg:text-9xl uppercase mb-4 leading-none opacity-0 animate-fade-up delay-200"
+            className="font-heading text-6xl sm:text-7xl lg:text-9xl uppercase mb-4 leading-none animate-fade-up delay-200"
             style={{ color: 'var(--color-or-clair)', letterSpacing: '0.12em' }}
           >
             FAMADY
           </h1>
 
           <p
-            className="font-body text-lg lg:text-xl italic text-white mb-8 opacity-0 animate-fade-up delay-300"
+            className="font-body text-lg lg:text-xl italic text-white mb-8 animate-fade-up delay-300"
           >
             Le chic dans sa plus belle expression
           </p>
 
           <Link
             href="/collections"
-            className="font-body text-sm tracking-[0.15em] text-white uppercase relative group inline-block opacity-0 animate-fade-up delay-300"
+            className="font-body text-sm tracking-[0.15em] text-white uppercase relative group inline-block animate-fade-up delay-300"
           >
             Découvrir la collection
             <span className="block h-px bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mt-1" />
