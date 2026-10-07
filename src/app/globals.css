@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ════════════════════════════════════════════════════════════════
+   PALETTE FAMADY — Extraite du logo doré + décors de shooting
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Fonds */
+  --color-bg-primary: #0A0906;      /* Noir chaud — fond principal */
+  --color-bg-secondary: #1C1917;    /* Anthracite — sections intermédiaires */
+  --color-bg-accent: #F7F4EE;       /* Ivoire — sections claires */
+
+  /* Or — extrait du logo doré pixel par pixel */
+  --color-or-clair: #CBA966;        /* Or clair métallique — accent principal */
+  --color-or-moyen: #AF9155;        /* Or moyen — dégradé secondaire */
+  --color-or-reflet: #F4EFD8;       /* Reflet crème — sur fond très sombre */
+  --color-or-ombre: #725D32;        /* Or profond — bordures fines */
+
+  /* Textes */
+  --color-text-primary: #FFFFFF;    /* Blanc — texte principal sur fond sombre */
+  --color-text-body: #E5E0D8;       /* Blanc cassé — corps de texte */
+  --color-text-muted: #9A9186;      /* Gris chaud — labels, sous-titres */
+  --color-text-dark: #1C1917;       /* Anthracite — texte sur fond ivoire */
+
+  /* Accent / CTA */
+  --color-accent: #CBA966;          /* Or clair */
+  --color-accent-hover: #F4EFD8;    /* Reflet crème au hover */
+
+  /* Bordures */
+  --color-border: #2A2520;          /* Frontière subtile sur fond noir */
+  --color-border-or: #CBA966;       /* Bordure or — séparateurs premium */
+
+  /* Typographie */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  /* Dégradé or — pour accents premium uniquement */
+  --gradient-or: linear-gradient(135deg, #F4EFD8 0%, #CBA966 40%, #AF9155 70%, #725D32 100%);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   RESET & BASE
+   ════════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-body);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   UTILITAIRES GLOBAUX
+   ════════════════════════════════════════════════════════════════ */
+
+@layer utilities {
+  /* Conteneur standard */
+  .container-site {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section plein viewport */
+  .section-full {
+    @apply min-h-screen flex items-center;
+  }
+
+  /* Transitions mesurées */
+  .transition-site {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Focus visible accessible */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    --tw-ring-color: var(--color-accent);
+  }
+
+  /* Texte or — dégradé métallique */
+  .text-or {
+    background: var(--gradient-or);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Titre de section — style FAMADY */
+  .section-label {
+    @apply font-heading uppercase tracking-[0.2em] text-sm;
+    color: var(--color-or-reflet);
+  }
+
+  /* Séparateur fin or */
+  .divider-or {
+    @apply block h-px w-20;
+    background-color: var(--color-or-clair);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   TYPOGRAPHIE
+   ════════════════════════════════════════════════════════════════ */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  line-height: 1.15;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   ANIMATIONS MESURÉES
+   ════════════════════════════════════════════════════════════════ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Délais pour les entrées en cascade (hero uniquement) */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
