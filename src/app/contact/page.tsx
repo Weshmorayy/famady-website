@@ -8,7 +8,7 @@ import ContactPageClient from './ContactPageClient'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: `Contactez Famady par WhatsApp ou sur Instagram. Vente en ligne, livraison à Dakar. WhatsApp : +221 77 609 64 16.`,
+  description: `Contactez Famady par WhatsApp ou sur Instagram. Vente en ligne, livraison à Dakar. WhatsApp : +221 70 802 72 77.`,
   openGraph: {
     title: `Contact — ${siteConfig.name}`,
     description: 'Écrivez-nous sur WhatsApp. Nous répondons 24 h/24.',
@@ -59,7 +59,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="font-body text-lg text-white hover:text-[var(--color-or-clair)] transition-colors"
                 >
-                  +221 77 609 64 16
+                  +221 70 802 72 77
                 </a>
               </div>
             </li>

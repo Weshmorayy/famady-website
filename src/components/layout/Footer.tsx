@@ -41,8 +41,8 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/221776096416" target="_blank" rel="noopener noreferrer" className="font-body text-[var(--color-text-body)] hover:text-[var(--color-or-clair)] transition-colors">
-                  WhatsApp +221 77 609 64 16
+                <a href="https://wa.me/221708027277" target="_blank" rel="noopener noreferrer" className="font-body text-[var(--color-text-body)] hover:text-[var(--color-or-clair)] transition-colors">
+                  WhatsApp +221 70 802 72 77
                 </a>
               </li>
             </ul>

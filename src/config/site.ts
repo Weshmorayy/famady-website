@@ -12,9 +12,9 @@ export const siteConfig = {
 
   // ─── Contact ─────────────────────────────────────────────────
   contact: {
-    phone: '77 609 64 16',
-    whatsapp: '221776096416',
-    whatsappUrl: 'https://wa.me/221776096416',
+    phone: '70 802 72 77',
+    whatsapp: '221708027277',
+    whatsappUrl: 'https://wa.me/221708027277',
     email: '',
     address: 'Vente en ligne',
     neighborhood: '',
